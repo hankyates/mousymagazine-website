@@ -36,7 +36,7 @@ export default function HomeIndex ({
             </section>
             <section id="two">
               <h2>Check it out:</h2>
-              <a href="/services">Services</a>
+              <a href="/music">Music</a>
             </section>
           </>}
       </div>

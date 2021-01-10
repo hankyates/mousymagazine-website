@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -avz public hank@hankyates.com:./website/mousy-magazine
+rsync -avz public/ hank@hankyates.com:./mousymagazine/website/
