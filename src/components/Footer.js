@@ -15,6 +15,11 @@ const Footer = () => (
           </a>
         </li>
         <li>
+          <a href="https://www.youtube.com/channel/UCBZaj_OerrSEMgRppGebFlw" target="_blank" rel="noreferrer" className="icon fa-youtube">
+            <span className="label">YouTube</span>
+          </a>
+        </li>
+        <li>
           <a href="https://twitter.com/mousymagazine" target="_blank" rel="noreferrer" className="icon fa-twitter">
             <span className="label">Twitter</span>
           </a>

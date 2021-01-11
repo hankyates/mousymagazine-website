@@ -7,7 +7,7 @@ export default function HomeIndex ({
   pageContext: {page},
 }) {
   const siteTitle = 'Mousy Magazine'
-  const siteDescription = 'Ambient Post-Classical Electronic Music Composer'
+  const siteDescription = 'Ambient Post-Classical Electronic Music Composer and Audio Engineer'
 
   return (
     <Layout>
@@ -18,25 +18,31 @@ export default function HomeIndex ({
 
       <div id="main">
         {page &&
-          <div>
-            <h2>{page.title}</h2>
-            <div dangerouslySetInnerHTML={{ __html: page.html }} />
-          </div>}
-        {!page &&
           <>
             <section id="one">
               <header className="major">
                 <h2>
-                  Hi
+                  {page.title}
                 </h2>
               </header>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+              {page.subtitle && <p>{page.subtitle}</p> }
             </section>
-            <section id="two">
-              <h2>Check it out:</h2>
-              <a href="/music">Music</a>
+            {page.html && <section id="two"> <div dangerouslySetInnerHTML={{ __html: page.html }} /> </section>}
+          </>}
+        {!page &&
+          <>
+            <section id="one">
+              <header className="major">
+                <h2>Hi. Here are some of the things I do:</h2>
+              </header>
+              <ul>
+                <li><a href="/music">Music</a></li>
+                <li><a href="/releases">Releases</a></li>
+                <li><a href="/audio-engineering">Audio Engineering</a></li>
+                <li><a href="/mixing-mastering">Mixing/Mastering</a></li>
+                <li><a href="/composition">Composition</a></li>
+                <li><a href="/production">Production</a></li>
+              </ul>
             </section>
           </>}
       </div>
