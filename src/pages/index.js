@@ -39,8 +39,8 @@ export default function HomeIndex ({
                 <li><a href="/music-releases">Music Releases</a></li>
                 <li><a href="/mixing-mastering">Mixing/Mastering</a></li>
                 <li><a href="/composition">Composition</a></li>
+                <li><a href="/audio-journal">Audio Journal(Podcast)</a></li>
                 <li><a href="/audio-production">Audio Production</a></li>
-                <li><a href="/audio-engineering">Audio Engineering</a></li>
               </ul>
             </section>
           </>}
