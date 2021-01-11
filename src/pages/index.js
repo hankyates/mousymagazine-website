@@ -36,12 +36,11 @@ export default function HomeIndex ({
                 <h2>Hi. Here are some of the things I do:</h2>
               </header>
               <ul>
-                <li><a href="/music">Music</a></li>
-                <li><a href="/releases">Releases</a></li>
-                <li><a href="/audio-engineering">Audio Engineering</a></li>
+                <li><a href="/music-releases">Music Releases</a></li>
                 <li><a href="/mixing-mastering">Mixing/Mastering</a></li>
                 <li><a href="/composition">Composition</a></li>
-                <li><a href="/production">Production</a></li>
+                <li><a href="/audio-production">Audio Production</a></li>
+                <li><a href="/audio-engineering">Audio Engineering</a></li>
               </ul>
             </section>
           </>}

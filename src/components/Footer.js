@@ -29,6 +29,11 @@ const Footer = () => (
             <span className="label">Spotify</span>
           </a>
         </li>
+        <li>
+          <a href="https://soundcloud.com/mousymagazine" target="_blank" rel="noreferrer" className="icon fa-soundcloud">
+            <span className="label">Soundcloud</span>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
