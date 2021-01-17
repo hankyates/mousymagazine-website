@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://mousymagazine.org`,
     title: 'Mousy Magazine',
     author: 'Hank Yates',
     description: 'Ambient Post-Classical Electronic Music Composer',
@@ -31,5 +32,10 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: { createLinkInHead: true }
+    }
+
   ],
 }
