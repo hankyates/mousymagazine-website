@@ -895,6 +895,11 @@
 
 /* Header */
 
+  @media only screen and (max-width: 600px){
+     #header{
+        background-image: url('../images/bg-mobile.webp');
+     }
+  }
   #header {
     @include vendor('display', 'flex');
     @include vendor('flex-direction', 'column');

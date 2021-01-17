@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build && cp src/static/* public/",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.js\"",
     "deploy": ". deploy"

@@ -6,6 +6,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-copy-files',
+      options: {
+        source: `${__dirname}/src/static`,
+        destination: `${__dirname}/public`
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-16179822-3",

@@ -65,6 +65,11 @@
 
 /* Header */
 
+  @media only screen and (max-width: 600px){
+     #header{
+        background-image: url('../../images/bg-mobile.webp');
+     }
+  }
   #header {
     background-image: url('../../images/bg.webp');
     background-repeat: no-repeat;
