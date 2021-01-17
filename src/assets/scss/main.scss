@@ -452,7 +452,7 @@
 
     &:before {
       @include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
-      background: url('images/overlay.png');
+      //background: url('images/overlay.png');
       border-radius: _size(border-radius);
       content: '';
       display: block;
@@ -494,7 +494,7 @@
         }
 
         &:before {
-          background: url('images/overlay.png'), url('images/overlay.png');
+          //background: url('images/overlay.png'), url('images/overlay.png');
           opacity: 1.0;
         }
       }
@@ -907,7 +907,8 @@
     @include vendor('justify-content', 'space-between');
     background-color:   _palette(accent2, bg);
     background-attachment:  scroll,               fixed;
-    background-image:   url('images/overlay.png'),      url('../images/bg.webp');
+    //background-image:   url('images/overlay.png'),      url('../images/bg.webp');
+    background-image:   url('../images/bg.webp');
     background-position:  top left,             top left;
     background-repeat:    repeat,               no-repeat;
     background-size:    auto,               auto;
