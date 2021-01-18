@@ -14,12 +14,16 @@ export default function Player () {
     }
   }, [])
   return <div>
-    <h3>Currently Playing: Episode #{episode}</h3>
-    <AudioPlayer src={`https://cdn.mousymagazine.org/episode-${episode}.mp3`} />
-    <ul className="alt">
-      {episodes.map((episodeNumber) => <li key={`ep-${episodeNumber}`}>
-        <button className="button special" onClick={() => setEpisode(episodeNumber)}>Episode {episodeNumber}</button>
-      </li>)}
-    </ul>
+    <AudioPlayer
+      src={`https://cdn.mousymagazine.org/episode-${episode}.mp3`}
+      header={<h3>Currently Playing: Episode #{episode}</h3>}
+      footer={
+        <ul className="alt">
+          {episodes.map((episodeNumber) => <li key={`ep-${episodeNumber}`}>
+            <button className="button special" onClick={() => setEpisode(episodeNumber)}>Episode {episodeNumber}</button>
+          </li>)}
+        </ul>
+      }
+    />
   </div>
 }
