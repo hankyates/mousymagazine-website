@@ -888,11 +888,7 @@
 
 /* Header */
 
-  @media only screen and (max-width: 600px){
-     #header{
-        background-image: url('../images/bg-mobile.webp');
-     }
-  }
+
   #header {
     @include vendor('display', 'flex');
     @include vendor('flex-direction', 'column');
@@ -913,6 +909,10 @@
     text-align: right;
     top: 0;
     width: $size-header-width;
+
+    @include breakpoint(small) {
+      background-image: url('../images/bg-mobile.webp');
+    }
 
     > * {
       @include vendor('flex-shrink', '0');
