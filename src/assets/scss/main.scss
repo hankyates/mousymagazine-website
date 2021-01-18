@@ -946,6 +946,17 @@
 
 /* Footer */
 
+  .home.icons {
+    li {
+      display: block;
+      margin: 0.5em 0;
+    }
+    .label {
+      display: inline;
+      margin-left: 0.5em;
+      vertical-align: text-bottom;
+    }
+  }
   #footer {
     .icons {
       margin: (_size(element-margin) * 0.5) 0 0 0;
