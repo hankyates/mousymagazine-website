@@ -11,6 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com/"/>
         <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic&display=swap" />
         <link rel="preload" as="font" type="font/woff2" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0"/>
         <link rel="preload" as="style" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
