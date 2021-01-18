@@ -573,10 +573,11 @@
     &.alt {
       list-style: none;
       padding-left: 0;
+      padding-top: 1em;
 
       li {
-        border-top: solid 2px _palette(border);
-        padding: 0.5em 0;
+        padding: 0.5em;
+        display: inline-block;
 
         &:first-child {
           border-top: 0;

@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
+import Player from '../components/Player'
 import Layout from '../components/layout'
 
 export default function HomeIndex ({
@@ -17,18 +17,16 @@ export default function HomeIndex ({
       </Helmet>
 
       <div id="main">
-        {page &&
-          <>
-            <section id="one">
-              <header className="major">
-                <h2>
-                  {page.title}
-                </h2>
-              </header>
-              {page.subtitle && <p>{page.subtitle}</p> }
-            </section>
-            {page.html && <section id="two"> <div dangerouslySetInnerHTML={{ __html: page.html }} /> </section>}
-          </>}
+        {page && <>
+          <section id="one">
+            <header className="major">
+              <h2>{page.title}</h2>
+            </header>
+            {page.subtitle && <p>{page.subtitle}</p> }
+          </section>
+          {page.path === '/audio-journal' && <Player />}
+          {page.html && <section id="two"> <div dangerouslySetInnerHTML={{ __html: page.html }} /> </section>}
+        </>}
         {!page &&
           <>
             <section id="one">
