@@ -12,7 +12,7 @@ export default function HomeIndex ({
   return (
     <Layout>
       <Helmet>
-        <title>{siteTitle}</title>
+        {page && page.title ? <title>{siteTitle} | {page.title}</title> : <title>{siteTitle}</title>}
         <meta name="description" content={siteDescription} />
       </Helmet>
 

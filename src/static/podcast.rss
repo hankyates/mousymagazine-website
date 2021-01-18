@@ -26,7 +26,7 @@
     <itunes:author>Mousy Magazine</itunes:author>
     <itunes:duration>00:55:45</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
-    <guid>https://cdn.mousymagazine.org/episode-1.mp3</guid>
+    <guid>https://mousymagazine.org/audio-journal?episode=3</guid>
 </item>
 
 <item>
@@ -39,7 +39,7 @@
     <itunes:author>Author Name</itunes:author>
     <itunes:duration>00:45:31</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
-    <guid>https://cdn.mousymagazine.org/episode-2.mp3</guid>
+    <guid>https://mousymagazine.org/audio-journal?episode=2</guid>
 </item>
 
 <item>
@@ -52,7 +52,7 @@
     <itunes:author>Author Name</itunes:author>
     <itunes:duration>00:35:34</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
-    <guid>https://cdn.mousymagazine.org/episode-1.mp3</guid>
+    <guid>https://mousymagazine.org/audio-journal?episode=1</guid>
 </item>
 
 </channel>

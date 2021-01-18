@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 
@@ -7,6 +7,12 @@ const episodes = Array(NUM_EPISODES).fill().map((item, index) => index + 1).reve
 
 export default function Player () {
   const [episode, setEpisode] = useState(3)
+  useEffect(() => {
+    let p = new URLSearchParams(window.location.search)
+    if (p.has('episode') && episodes.includes(+p.get('episode'))) {
+      setEpisode(p.get('episode'))
+    }
+  }, [])
   return <div>
     <h3>Currently Playing: Episode #{episode}</h3>
     <AudioPlayer src={`https://cdn.mousymagazine.org/episode-${episode}.mp3`} />
