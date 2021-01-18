@@ -2,7 +2,7 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 <channel>
 <title>Mousy Magazine Audio Journal</title>
-<link>https://mousymagazine.org/audio-journal<link>
+<link>https://mousymagazine.org/audio-journal</link>
 <language>en-us</language>
 <itunes:subtitle>A composition and audio production journal.</itunes:subtitle>
 <itunes:author>Mousy Magazine</itunes:author>
@@ -14,7 +14,7 @@
 </itunes:owner>
 <itunes:explicit>no</itunes:explicit>
 <itunes:image href="http://www.example.com/podcast-icon.jpg" />
-<itunes:category text="Category Name"/>Music Commentary</itunes:category>
+<itunes:category text="Category Name">Music Commentary</itunes:category>
 
 <item>
     <title>Title of Podcast Episode</title>
