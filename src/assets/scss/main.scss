@@ -36,11 +36,6 @@
   $size-header-pad: 4em;
 
 /* Basic */
-@font-face {
-  font-family: 'FontAwesome-swap';
-  font-display: swap;
-  src: local('FontAwesome'), url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2');
-}
 
   body {
     background: _palette(bg);
