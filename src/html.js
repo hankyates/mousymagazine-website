@@ -11,7 +11,10 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic&display=swap" />
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic&display=swap" />
+        <link rel="preload" as="font" type="font/woff2" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0"/>
+        <link rel="preload" as="style" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link defer rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
