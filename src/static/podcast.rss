@@ -24,7 +24,7 @@
     <enclosure url="https://cdn.mousymagazine.org/episode-3.mp3" type="audio/mpeg" length="127600000"></enclosure>
     <pubDate>Thu, 21 Dec 2016 16:01:07 +0000</pubDate>
     <itunes:author>Mousy Magazine</itunes:author>
-    <itunes:duration>00:55:45</itunes:duration>
+    <itunes:duration>00:35:34</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
     <guid>https://mousymagazine.org/audio-journal?episode=3</guid>
 </item>
@@ -36,7 +36,7 @@
     <link>https://mousymagazine.org/audio-journal</link>
     <enclosure url="https://cdn.mousymagazine.org/episode-2.mp3" type="audio/mpeg" length="104200000"></enclosure>
     <pubDate>Thu, 21 Dec 2016 16:01:07 +0000</pubDate>
-    <itunes:author>Author Name</itunes:author>
+    <itunes:author>Mousy Magazine</itunes:author>
     <itunes:duration>00:45:31</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
     <guid>https://mousymagazine.org/audio-journal?episode=2</guid>
@@ -44,13 +44,13 @@
 
 <item>
     <title>Episode 1</title>
-    <itunes:summary>Description of podcast episode content</itunes:summary>
-    <description>Description of podcast episode content</description>
+    <itunes:summary>An introduction to the podcast.</itunes:summary>
+    <description>An introduction to the podcast.</description>
     <link>https://mousymagazine.org/audio-journal</link>
     <enclosure url="https://cdn.mousymagazine.org/episode-1.mp3" type="audio/mpeg" length="82800000"></enclosure>
     <pubDate>Thu, 21 Dec 2016 16:01:07 +0000</pubDate>
-    <itunes:author>Author Name</itunes:author>
-    <itunes:duration>00:35:34</itunes:duration>
+    <itunes:author>Mousy Magazine</itunes:author>
+    <itunes:duration>00:55:45</itunes:duration>
     <itunes:explicit>no</itunes:explicit>
     <guid>https://mousymagazine.org/audio-journal?episode=1</guid>
 </item>
