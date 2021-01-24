@@ -2,7 +2,7 @@ import React, {useRef, useState, useEffect} from 'react'
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 
-const NUM_EPISODES = 3
+const NUM_EPISODES = 4
 const episodes = Array(NUM_EPISODES).fill().map((item, index) => index + 1).reverse()
 
 export default function Player () {
