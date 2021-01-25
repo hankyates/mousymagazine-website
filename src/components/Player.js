@@ -6,7 +6,7 @@ const NUM_EPISODES = 4
 const episodes = Array(NUM_EPISODES).fill().map((item, index) => index + 1).reverse()
 
 export default function Player () {
-  const [episode, setEpisode] = useState(3)
+  const [episode, setEpisode] = useState(NUM_EPISODES)
   const player = useRef(null)
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Player () {
     <AudioPlayer
       ref={player}
       src={`https://cdn.mousymagazine.org/episode-${episode}.mp3`}
-      header={<h3>Currently Playing: Episode #{episode}</h3>}
+    header={<h3>Currently Playing: Episode #{episode}. <a href={`https://cdn.mousymagazine.org/episode-${episode}.mp3`}>Download this episode</a></h3>}
       footer={
         <ul className="alt">
           {episodes.map((episodeNumber) => <li key={`ep-${episodeNumber}`}>
