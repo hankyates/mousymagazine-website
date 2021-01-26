@@ -2,7 +2,7 @@ import React, {useRef, useState, useEffect} from 'react'
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 
-const NUM_EPISODES = 4
+const NUM_EPISODES = 5
 const episodes = Array(NUM_EPISODES).fill().map((item, index) => index + 1).reverse()
 
 export default function Player () {
@@ -23,7 +23,7 @@ export default function Player () {
     <AudioPlayer
       ref={player}
       src={`https://cdn.mousymagazine.org/episode-${episode}.mp3`}
-    header={<h3>Currently Playing: Episode #{episode}. <a href={`https://cdn.mousymagazine.org/episode-${episode}.mp3`}>Download this episode</a></h3>}
+    header={<h3>Currently Playing: Episode #{episode}. <a download href={`https://cdn.mousymagazine.org/episode-${episode}.mp3`}>Download this episode</a></h3>}
       footer={
         <ul className="alt">
           {episodes.map((episodeNumber) => <li key={`ep-${episodeNumber}`}>
