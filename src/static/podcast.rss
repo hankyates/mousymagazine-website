@@ -17,6 +17,19 @@
 <itunes:category text="Music Commentary"/>
 
 <item>
+    <title>Episode 4</title>
+    <itunes:summary>Description of podcast episode content</itunes:summary>
+    <description>Description of podcast episode content</description>
+    <link>https://mousymagazine.org/audio-journal</link>
+    <enclosure url="https://cdn.mousymagazine.org/episode-4.mp3" type="audio/mpeg" length="127600000"></enclosure>
+    <pubDate>Thu, 21 Dec 2016 16:01:07 +0000</pubDate>
+    <itunes:author>Mousy Magazine</itunes:author>
+    <itunes:duration>00:35:34</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+    <guid>https://mousymagazine.org/audio-journal?episode=4</guid>
+</item>
+
+<item>
     <title>Episode 3</title>
     <itunes:summary>Description of podcast episode content</itunes:summary>
     <description>Description of podcast episode content</description>

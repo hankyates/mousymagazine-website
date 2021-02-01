@@ -13,7 +13,6 @@ export default function Player () {
     let p = new URLSearchParams(window.location.search)
     if (p.has('episode') && episodes.includes(+p.get('episode'))) {
       setEpisode(p.get('episode'))
-      player.current.audio.current.currentTime
     }
     if (p.has('t')) {
       player.current.audio.current.currentTime = +p.get('t')
