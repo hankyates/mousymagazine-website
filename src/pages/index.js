@@ -12,7 +12,7 @@ export default function HomeIndex ({
   return (
     <Layout>
       <Helmet>
-        {page && page.title ? <title>{page.title} | {siteTitle}</title> : <title>{siteTitle}</title>}
+        {page && page.title ? <title>{page.title} | {siteTitle}</title> : <title>{siteTitle} | {siteDescription}</title>}
         <meta name="description" content={siteDescription} />
         {page && page.keywords ? <meta name="keywords" content={page.keywords} /> : <meta name="keywords" content="ambient music, post classical music, audio production, audio mixing, audio mastering, media composer, film score composer" />}
       </Helmet>
