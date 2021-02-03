@@ -1,6 +1,7 @@
 import React, {useRef, useState, useEffect} from 'react'
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
+import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
 const NUM_EPISODES = 6
 const episodes = Array(NUM_EPISODES).fill().map((item, index) => index + 1).reverse()
@@ -20,6 +21,13 @@ export default function Player () {
   }, [])
   return <div>
     <AudioPlayer
+      onPlay={(e) => {
+        trackCustomEvent({
+          category: 'podcast-player',
+          action: 'play',
+          value: episode
+        })
+      }}
       ref={player}
       src={`https://cdn.mousymagazine.org/episode-${episode}.mp3`}
     header={<h3>Currently Playing: Episode #{episode}. <a download href={`https://cdn.mousymagazine.org/episode-${episode}.mp3`}>Download this episode</a></h3>}
