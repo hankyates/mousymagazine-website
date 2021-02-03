@@ -2,19 +2,25 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Player from '../components/Player'
 import Layout from '../components/layout'
+import ogImage from '../assets/images/bg-mobile.jpg'
 
 export default function HomeIndex ({
   pageContext: {page},
 }) {
   const siteTitle = 'Mousy Magazine'
   const siteDescription = 'Ambient Post-Classical Electronic Music Composer and Audio Engineer'
+  const title = page && page.title ? `${page.title} | ${siteTitle}` : `${siteTitle} | ${siteDescription}`
+  const keywords = page && page.keywords ? page.keywords : "ambient music, post classical music, audio production, audio mixing, audio mastering, media composer, film score composer"
 
   return (
     <Layout>
       <Helmet>
-        {page && page.title ? <title>{page.title} | {siteTitle}</title> : <title>{siteTitle} | {siteDescription}</title>}
+        <title>{title}</title>
         <meta name="description" content={siteDescription} />
-        {page && page.keywords ? <meta name="keywords" content={page.keywords} /> : <meta name="keywords" content="ambient music, post classical music, audio production, audio mixing, audio mastering, media composer, film score composer" />}
+        <meta name="keywords" content={keywords} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={siteDescription} />
+        <meta property="og:image" content={ogImage} />
       </Helmet>
 
       <div id="main">
