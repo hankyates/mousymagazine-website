@@ -41,11 +41,9 @@ export default function HomeIndex ({
                 <h2>Hi. Here are some of the things I do:</h2>
               </header>
               <ul className="home icons">
-                <li><a className="icon fa-volume-up" href="/music-releases"><span className="label">Music Releases</span></a></li>
-                <li><a className="icon fa-headphones" href="/mixing-mastering"><span className="label">Mixing/Mastering</span></a></li>
-                <li><a className="icon fa-music" href="/composition"><span className="label">Composition</span></a></li>
+                <li><a className="icon fa-music" href="/music-releases"><span className="label">Music Releases</span></a></li>
                 <li><a className="icon fa-podcast" href="/audio-journal"><span className="label">Audio Journal (Podcast)</span></a></li>
-                <li><a className="icon fa-cogs" href="/audio-production"><span className="label">Audio Production</span></a></li>
+                <li><a className="icon fa-volume-up" href="/audio-production"><span className="label">Audio Production</span></a></li>
               </ul>
             </section>
           </>}
